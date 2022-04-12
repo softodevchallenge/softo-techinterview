@@ -1,7 +1,7 @@
 compile = ["./.config/build.sh"]
 run = ["node", "--enable-source-maps", ".build/index.js"]
 
-hidden = [".build", ".config"]
+hidden = [".build", ".config", ".tests"]
 
 entrypoint = "index.ts"
 

@@ -17,7 +17,7 @@
   "jest": {
     "testRegex": ".*\\..*spec\\.ts$",
     "roots": [
-      "<rootDir>/.config/.tests"
+      "<rootDir>/.tests"
     ],
     "transform": {
       "^.+\\.(t|j)sx?$": [
