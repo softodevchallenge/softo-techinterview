@@ -1,0 +1,29 @@
+{
+  "name": "softharmoniouscurrency",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test jest --runInBand --detectOpenHandles --forceExit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@swc/core": "^1.2.165",
+    "@swc/jest": "^0.2.20",
+    "jest": "^27.5.1"
+  },
+  "jest": {
+    "testRegex": ".*\\..*spec\\.ts$",
+    "roots": [
+      "<rootDir>/.config/.tests"
+    ],
+    "transform": {
+      "^.+\\.(t|j)sx?$": [
+        "@swc/jest"
+      ]
+    },
+    "testEnvironment": "node"
+  }
+}
